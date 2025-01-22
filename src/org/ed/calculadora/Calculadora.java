@@ -27,10 +27,10 @@ public class Calculadora {
      // Selección de la operación basada en la opción ingresada
      switch (eleccion) {
          case 1: // Suma
-             resultado = numero1 + numero2;
+             resultado = numero1 + numero2;//FIXME error suma bien
              break;
          case 2: // Resta
-             resultado = numero1 - numero2;
+             resultado = numero1 - numero2;//TODO cambiar nombre de la variable
              break;
          case 3: // Multiplicación
              resultado = numero1 * numero2;
