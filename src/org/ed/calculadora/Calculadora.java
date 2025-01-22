@@ -8,16 +8,11 @@ public class Calculadora {
      Scanner scanner = new Scanner(System.in);
 
      // Menú de opciones
-     System.out.println("CALCULADORA");
-     System.out.println("Seleccione una operación:");
-     System.out.println("1. Sumar");
-     System.out.println("2. Restar");
-     System.out.println("3. Multiplicar");
-     System.out.println("4. Dividir");
+     Menu();
 
      // Leer la opción seleccionada por el usuario
      System.out.print("Ingrese el número de la operación: ");
-     int opcion = scanner.nextInt();
+     int eleccion = scanner.nextInt();
 
      // Leer los dos números que el usuario desea operar
      System.out.print("Ingrese el primer número: ");
@@ -30,7 +25,7 @@ public class Calculadora {
      boolean operacionValida = true;
 
      // Selección de la operación basada en la opción ingresada
-     switch (opcion) {
+     switch (eleccion) {
          case 1: // Suma
              resultado = numero1 + numero2;
              break;
@@ -62,4 +57,13 @@ public class Calculadora {
      // Cerrar el objeto Scanner
      scanner.close();
  }
+
+private static void Menu() {
+	System.out.println("CALCULADORA");
+     System.out.println("Seleccione una operación:");
+     System.out.println("1. Sumar");
+     System.out.println("2. Restar");
+     System.out.println("3. Multiplicar");
+     System.out.println("4. Dividir");
+}
 }
